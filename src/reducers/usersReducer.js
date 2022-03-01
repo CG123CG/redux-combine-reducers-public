@@ -11,6 +11,12 @@ function usersReducer(state = initialData, action) {
                 userslist: [...state.userslist, 'New-Reducer-User']
             }
             break
+        case 'ADD':
+            newState = {
+                ...state,
+                userslist: [...state.userslist, 'New-Reducer-User']
+            }
+            break
         default:
             return state
     }

@@ -11,6 +11,12 @@ function itemsReducer(state = initialData, action) {
                 itemslist: [...state.itemslist, 'New-Reducer-Item']
             }
             break
+        case 'ADD':
+            newState = {
+                ...state,
+                itemslist: [...state.itemslist, 'New-Reducer-Item']
+            }
+            break
         default:
             return state
     }
